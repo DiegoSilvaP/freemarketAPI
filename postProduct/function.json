@@ -1,0 +1,29 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "cosmosDB",
+      "name": "outputDocument",
+      "databaseName": "freemarketdb",
+      "collectionName": "products",
+      "createIfNotExists": false,
+      "connectionStringSetting": "freemarket-products_DOCUMENTDB",
+      "partitionKey": "/type",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
