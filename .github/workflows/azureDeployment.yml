@@ -6,7 +6,7 @@ name: CI
 # events but only for the master branch
 on:
   push:
-    branches: [ main ]
+    branches: [ luisagalva-CD]
   pull_request:
     branches: [ main ]
 
@@ -28,6 +28,4 @@ jobs:
 
       - uses: Azure/functions-action@v1.1.5
         with:
-          app-name: 
-          # Publish profile (*.publishsettings) file contents with web deploy secrets
-          publish-profile: # optional
+          app-name: freemarketfunc
