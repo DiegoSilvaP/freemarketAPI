@@ -1,6 +1,6 @@
 # get table context
 Add-AzAccount
-Get-AzSubscription -SubscriptionId "75e11465-fb26-4143-8878-efcdf8ba83ab" | Set-AzContext
+Get-AzSubscription -SubscriptionId "" | Set-AzContext
 $location = "westus"
 $resourceGroup = "freemarket-rg"
 # Create storage account
